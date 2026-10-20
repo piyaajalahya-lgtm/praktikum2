@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Registrasi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2fb;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 17px;
+            margin: 0 0 5px;
+        }
+
+        .deskripsi {
+            text-align: center;
+            font-size: 11px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 9px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 12px;
+            background: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2864e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #174fc7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Registrasi Akun Belajar</h3>
+        <p class="deskripsi">
+            Lengkapi formulir di bawah ini dengan benar.
+        </p>
+
+        <form>
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap" required>
+
+            <label>Alamat Email</label>
+            <input type="email" placeholder="Masukkan email" required>
+
+            <label>Kata Sandi</label>
+            <input type="password" placeholder="Minimal 8 karakter"
+                   minlength="8" required>
+
+            <label>Konfirmasi Kata Sandi</label>
+            <input type="password" placeholder="Ulangi kata sandi"
+                   minlength="8" required>
+
+            <label>Status Pengguna</label>
+            <select required>
+                <option value="">Pilih status</option>
+                <option value="siswa">Siswa</option>
+                <option value="guru">Guru</option>
+                <option value="umum">Umum</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+</body>
+</html>
